@@ -1,0 +1,36 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+
+    --primary-color-bg: black;
+    --secundary-color-bg:rgb(32, 32, 32);
+    --color-font-primary: #fff;
+    --color-font-secondary: cyan;
+
+
+}
+.contacto{
+
+    width: 100%;
+    padding-top: 100px;
+    background: var(--primary-color-bg);
+    color: var(--color-font-primary);
+    font-size: 18px;
+    line-height: 1.5em;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.form{
+    width: 80%;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"]{
+    width: 100%;
+    background-color: aliceblue;
+    color: black;
+    line-height: 1.3em;
+    border: 1px solid black;
+
+}

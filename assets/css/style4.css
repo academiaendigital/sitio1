@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body{
+    margin:0px;
+    padding: 0px;
+    line-height: 1.3em;
+    font-family: "Rubik", sans-serif;
+    text-decoration: none;
+    
+}
+:root{
+    --primary-color:#1C1678;
+    --secundary-color:#8576FF;
+    --blue:#7BC9FF;
+    --mint:#A3FFD6;
+    --white:#fff;
+    --black:#0000;
+    --grey: #222831;
+}
+a:hover{
+  color: yellow;
+
+
+}
+a:link{
+  color: var(--grey);
+  text-decoration: none;
+  }
+a:visited{
+  color: var(--grey);
+
+}
+a:active{
+  color:yellow;
+  text-decoration: none;
+
+}
+.padding-left-50x{
+    padding-left: 50px;
+}
+
+
+
+
+header{
+    height: 100px;
+    width: 100%;
+    border-bottom: 5px solid;
+    border-bottom-color: var(--secundary-color);
+    background: var(--primary-color);
+  
+    
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+}
+nav ul{
+    
+    list-style: none; /*quitar el estilo de la listas*/
+
+}
+
+nav li{
+    display: inline; /*se visualicen en horizontal*/
+    padding: 25px 20px;
+    background-color: var(--secundary-color);
+        
+}
+nav li a{
+    color: var(--white);
+    font-size: 18px;
+    text-decoration: none;
+}
+nav li a:hover{
+    color:var(--primary-color)
+}
+.servicios {
+    display: grid;
+    height: 350px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    background-color: var(--white);
+    padding: 10px;
+    margin-top: 100px;
+    
+  }
+
+  .item-servicios{
+    border: 1px solid gray;
+    align-content: center;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .title{
+    text-align: center;
+  }
+  h2{
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--primary-color);
+
+  }
+  h3{
+    font-size: 24px;
+  }
+  p{
+    font-size: 18px;
+
+  }
+  .icon{
+    font-size: 60px;
+    color: var(--secundary-color);
+  }
+
+  .nosotros{
+        display: grid;
+        align-content: center;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        padding-top: 10%;
+        margin-top: 100px;
+        /*background-color: var(--primary-color);*/
+        background-image: url(../images/ediicios-min.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color:var(--white);
+        padding-bottom: 10%;
+       
+   
+  }
+ /* .shadow{
+    background-color: #1C1678;
+  }*/
+  .image{
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid var(--white);
+    margin-left: 5%;
+
+  }
+  .nosotros h2{
+    color: var(--white);
+    text-transform: uppercase;
+  }
+  button{
+    background: var(--secundary-color);
+    color: var(--white);
+    font-size: 18px;
+    padding: 20px 25px 20px 25px;
+    border-radius: 20px;
+    border: 1px var(--secundary-color);
+    text-transform: uppercase;
+  }
+
+  .contacto{
+
+    width: 100%;
+    background: var(--secundary-color);
+    padding-top: 10%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10%;
+   
+  }
+ input[type="text"], input[type="email"], input[type="tel"]{
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  color: var(--black);
+  border-radius: 10px;
+  padding: 15px 10px;
+  font-size: 16px;
+  margin-top: 10px;
+
+ }
+ label{
+   color: var(--white);
+   font-size: 18px;
+   padding-bottom: 5px;
+   width: 100%;
+   margin-top: 10px;
+ }
+ textarea{
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  color: var(--black);
+  border-radius: 10px;
+  padding: 15px 10px;
+  font-size: 16px;
+  resize: none;
+  margin-top: 10px;
+ }
+
+ input[type="submit"]{
+   width: 100%;
+   background-color: var(--primary-color);
+   color: var(--white);
+   padding: 10px 10px;
+
+
+ }
+ .contact1 {
+   padding-left: 5%;
+ }
+.footer{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+ 
+
+}
+.title{
+  font-size: 32px;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: #1C1678;
+  animation-name: boxblue;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  /*animation-delay: -2s;*
+  /*animation-iteration-count: infinite;*/
+}
+#div1 {animation-timing-function: linear;
+}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+
+@keyframes boxblue {
+  /*from { background-color: #1C1678;}
+  to{ background-color: red;}*/
+
+ /* 0%   {background-color: red; left:0px; top:0px;}
+  25%  {background-color: yellow; left:200px; top:0px; }
+  50%  {background-color: blue; left:200px; top: 200px}
+  100% {background-color: green; left: 0px; top:0px;}*/
+  from{ left:0px;}
+  to{ left:500px;}
+}
+  
+.cambiocolor{
+  animation-name:iconblue;
+  animation-duration: 3s;
+}
+
+@keyframes blue {
+  
+
+}
+.fotografia{
+
+  width: 100%;
+  background-image: url(/assets/images/ediicios-min.jpg);
+  background-position: center center;
+  background-repeat: none;
+  padding: 5%  5%;
+  text-align: center;
+  
+}
+
+h1{ 
+  font-size: 3em;
+   color: var(--white);
+  }
+
+.fotografia p{
+   color: var(--white);
+}
+
+.galeria{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  
+}
